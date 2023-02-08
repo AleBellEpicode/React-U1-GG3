@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
+import BookList from "./Components/BookList";
+import fantasy from "./json/fantasy.json";
+/* import romance from "../json/romance.json";
+import horror from "../json/horror.json";
+import history from "../json/history.json";
+import fantasy from "../json/fantasy.json"; */
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <BookList props={fantasy} />
     </div>
   );
 }
